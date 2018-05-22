@@ -7,6 +7,8 @@
   <title>Bootstrap 4 Starter Pack</title>
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
   <link href="https://fonts.googleapis.com/css?family=Dosis:200,300" rel="stylesheet">
 </head>
 <body>
@@ -189,10 +191,10 @@
                     
                 </div> <!--background - illustration -->
  
-                <div id="your-class">
-                      <div class="classs1"><img src="img/iphone.png" alt=""> </div>
-                      <!-- <div>your content</div>
-                           <div>your content</div> -->
+                <div class="caroseoul" id="carousel">
+                      <div class=""><img src="img/iphone.png" alt=""> </div>
+                      <div><img src="img/iphone.png" alt=""></div>
+                       <div><img src="img/iphone.png" alt=""></div>
                 </div> 
                 
                 <div class="mockup1">
@@ -209,14 +211,14 @@
                 </div>
 
                 <div class="mockup-text2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla illo iure reiciendis cum, ipsum repudiandae nihil eos at, assumenda, inventore soluta quasi. Recusandae iusto quisquam quas cum maiores adipisci consequatur similique. Odio, ratione assumenda nam dolor molestias veritatis voluptas autem.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla illo iure reiciendis cum, ipsum repudiandae nihil eos at, assumenda, inventore soluta quasi. Recusandae iusto quisquam quas cum maiores adipisci consequatur similique.
                 </div>
                 <!--ABOUT SECTION-->
 
                 <!--Abou me-->
                 <div class="about-img"> <img src="img/avatar.jpg" alt=""></div>
 
-                <div class="about-text">About Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dolores magnam, velit quo quod nisi odio, neque officiis harum optio libero laudantium saepe aut fugiat molestias ratione eligendi aliquid voluptas?</div>
+                <div class="about-text"><h4>About me</h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dolores magnam, velit quo quod nisi odio, neque officiis harum optio libero laudantium saepe aut fugiat molestias ratione eligendi aliquid voluptas?</div>
 
                 <!--Others say about me-->
                 <div class="other-about">
@@ -248,26 +250,49 @@
 
         </div> <!--main-->
     </section>
-
-    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-     <script type="text/javascript" src="slick/slick.min.js"></script> -->
-
-    <!-- <script type="text/javascript">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    
+    <script type="text/javascript">
 
      $(document).ready(function(){
-        $('.your-class').slick({
-          setting-name: setting-value
+        $('.caroseoul').slick({
+          dots: true,
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 2000
         });
       });
+/*
+      $('.center').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+				 */
 
-    </script> --> 
+    </script> 
    
-  
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/popper.min.js"></script>
 </body>
 </html>
 
